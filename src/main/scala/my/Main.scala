@@ -1,4 +1,6 @@
 package my
+import myKotlin.MainKt
+import myKotlin.ExtensionKt
 
 object Main {
   def main(ags: Array[String]): Unit ={
@@ -18,5 +20,7 @@ object Main {
       (2003 to 2006).map(_ -> "repeats")
 
     println("map "+map)
+
+    println("string add " + ExtensionKt.addA("test"))
   }
 }
